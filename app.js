@@ -46,21 +46,16 @@ function grandTotal() {
 	document.querySelector("#inptGrandtotal").value = total;
 };
 
-window.onload = (event) => {
-	console.log("Bonjour le monde");
-	document.querySelector("#btnImpr").addEventListener('click', (event) => {
-		window.print();
+// Init
+for (let c = 1; c <= 4; c++) {
+	calculs("Col"+c+"Pts");
+	calculs("Col"+c+"Lig");
+}
+var inputs = document.querySelectorAll("input")
+for (const elt of inputs) {
+	//console.log(elt);
+	elt.addEventListener('blur', (event) => {
+ 		//console.log( event.target.id.substring(4,8) );
+ 		calculs( event.target.id.substring(4,11) );
 	});
-	for (let c = 1; c <= 4; c++) {
-		calculs("Col"+c+"Pts");
-		calculs("Col"+c+"Lig");
-	}
-	var inputs = document.querySelectorAll("input")
-	for (const elt of inputs) {
-		//console.log(elt);
-		elt.addEventListener('blur', (event) => {
-  			//console.log( event.target.id.substring(4,8) );
-  			calculs( event.target.id.substring(4,11) );
-		});
-	}
-};
+}
