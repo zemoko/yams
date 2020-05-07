@@ -14,7 +14,7 @@ html {
 }
 body {
 	background: linear-gradient(45deg,#4158d0,#c850c0);;
-	font: normal 2em Kuriland, Helvetica, Arial, Sans-Serif;
+	font: normal 2em "Kuriland", Helvetica, Arial, Sans-Serif;
 	line-height: 1.6;
 	color: #333;
 	display: flex;
