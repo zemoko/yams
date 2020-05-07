@@ -20,8 +20,14 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+header {
+	position: relative;
+}
 #btnImpr {
-	float: right;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 1.4rem;
 }
 h1 {
 	font-size: 2em;
