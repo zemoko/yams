@@ -112,6 +112,21 @@ footer a {
 }
 
 @media (min-width: 500px) {
+	body {
+		font-size:1.5rem;
+	}  
+	.yamTable th, .yamTable td {
+		padding: 1px 10px;
+	}
+	.yamTable th {
+		font-size: 1.2rem;
+	}
+	.yamTable thead th {
+		font-size: 1.6rem;
+	}
+	.yamTable input  {
+		width: 3rem;
+	}
 }
 
 @media print {
@@ -119,6 +134,7 @@ footer a {
 		background: white;
 		margin: 0;
 		background: none;
+		font-size:1.5rem;
 	}  
 	caption.impr {
 		display: table-caption;
