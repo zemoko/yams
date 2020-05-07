@@ -1,11 +1,14 @@
+// Registering Service Worker
+if('serviceWorker' in navigator) {
+	//navigator.serviceWorker.register('/sw.js');
+};
+
 function calculs(col) {
-	console.log("Bouge pas, je calcule la calonne " + col);
 	var total = 0;
 	var haut = document.querySelectorAll("[id^='inpt"+col+"']");
 	for (const score of haut) {
  		if(score.value.length != 0) total = total + parseInt(score.value);
 	}
-	console.log("total: " + total);
 	if ( total > 0 ) {
 		if ( col.substr(4) == "Pts" ) {
 			// En haut
@@ -18,7 +21,6 @@ function calculs(col) {
 			document.querySelector("#oupt"+col+"TotalRep").value = total;
 			total2 = parseInt(document.querySelector("#oupt"+col.replace("Pts","Lig")+"Total").value);
 			if (!isNaN(total2)) {
-				console.log("L'autre total: " + total2);
 				document.querySelector("#oupt"+col.replace("Pts","Total")).value = total + total2;
 				grandTotal()
 			}
@@ -27,7 +29,6 @@ function calculs(col) {
 			document.querySelector("#oupt"+col+"Total").value = total;			
 			total2 = parseInt(document.querySelector("#oupt"+col.replace("Lig","Pts")+"Total").value);
 			if (!isNaN(total2)) {
-				console.log("L'autre total: " + total2);
 				document.querySelector("#oupt"+col.replace("Lig","Total")).value = total + total2;
 				grandTotal()
 			}
@@ -53,9 +54,7 @@ for (let c = 1; c <= 4; c++) {
 }
 var inputs = document.querySelectorAll("input")
 for (const elt of inputs) {
-	//console.log(elt);
 	elt.addEventListener('blur', (event) => {
- 		//console.log( event.target.id.substring(4,8) );
  		calculs( event.target.id.substring(4,11) );
 	});
 }
