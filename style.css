@@ -126,7 +126,7 @@ footer a {
 	.yamTable th {
 		font-size: 1.2rem;
 	}
-	.yamTable thead th {
+	.yamTable thead th, .yamTable thead th:first-child {
 		font-size: 1.6rem;
 	}
 	.yamTable input  {
