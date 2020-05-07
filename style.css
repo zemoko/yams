@@ -193,7 +193,6 @@ footer a:hover, footer a:focus {
 		width: 276mm;
 		height: 190mm;
 		padding: 10mm;
-		overflow: hidden;
 		transform: rotate(270deg);
 		transform: translate(-276mm, O);
 		transform-origin: 0 0;
