@@ -20,7 +20,7 @@ html {
 	font-size: 62.5%;
 }
 body {
-	background: linear-gradient(45deg,#4158d0,#c850c0);;
+	background: linear-gradient(45deg,#4158d0,#c850c0);
 	font: normal 2em "DollieScript", Helvetica, Arial, Sans-Serif;
 	line-height: 1.6;
 	color: #333;
@@ -216,10 +216,10 @@ footer a {
 	.yamTable thead th:nth-child(2) {
 		width: 18%;
 	}
-	.yamTable tbody tr:not(.total)  td:nth-child(3n+3) {
+	.yamTable tbody tr:not(.total)  td:nth-child(4n+3) {
 		border-left: 2px solid #5560fd;
 	}
-	.yamTable tbody tr:.total  td:nth-child(3n+2) {
+	.yamTable tbody tr:.total  td:nth-child(4n+2) {
 		border-left: 2px solid #5560fd;
 	}
 	.yamTable tfoot td {
