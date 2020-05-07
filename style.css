@@ -6,19 +6,12 @@ html {
 	font-size: 62.5%;
 }
 body {
-	background: #fff;
+	background: #f1f1f1;
 	font: normal 1.6em Brush Script MT, cursive;
 	line-height: 1.6;
 	color: #333;
 	display: flex;
 	flex-direction: column;
-}
-h1 {
-	font-size: 2em;
-	line-height: 1.2em;
-	padding: 0.5em 0.3em 0.2em 0.3em;
-	text-align: center;
-	color: #6c6b6b;
 }
 
 .yamTable {
