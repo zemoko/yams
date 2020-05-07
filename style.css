@@ -223,7 +223,7 @@ footer a {
 		border-left: 2px solid #5560fd;
 	}
 	.yamTable tfoot td {
-		border-left: 2px solid ##9c4fc5;
+		border-left: 2px solid #9c4fc5;
 	}
 }
 @media print and (orientation:portrait) {
