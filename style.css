@@ -193,6 +193,8 @@ footer a:hover, footer a:focus {
 		width: 276mm;
 		height: 190mm;
 		padding: 10mm;
+		ransform: rotate(270deg) translate(-100%,0);
+		transform-origin: 0 0;
 	}
 	caption.impr {
 		display: table-caption;
@@ -219,6 +221,7 @@ footer a:hover, footer a:focus {
 	}
 	.yamTable thead th {
 		width: 7.5%;
+		position: static;
 	}
 	.yamTable thead th:first-child {
 		width: 22%;
