@@ -118,7 +118,7 @@ h1 {
 	border:none;
 	background: transparent;
 }
-.yamTable tfoot output {
+.yamTable output {
 	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
 }
 tbody tr:nth-child(2n) {
