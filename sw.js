@@ -1,6 +1,6 @@
 // Files to cache
 var cacheName = 'yams-v1';
-var appShellFiles = [
+var contentToCache = [
   '/',
   '/index.html',
   '/app.js',
