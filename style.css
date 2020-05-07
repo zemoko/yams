@@ -7,7 +7,7 @@ html {
 }
 body {
 	background: linear-gradient(45deg,#4158d0,#c850c0);;
-	font: normal 1.6em Brush Script MT, cursive;
+	font: normal 2em Brush Script MT, cursive;
 	line-height: 1.6;
 	color: #333;
 	display: flex;
@@ -30,22 +30,34 @@ h1 {
 	background: white;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
 }
+.yamTable th {
+	font-weight: normal;
+}
+.yamTable th, .yamTable td {
+	padding: 2px 20px;
+}
 .yamTable caption {
 	font-size: 2.8rem;
 }
+.yamTable thead th#prime {
+	font-size: 1.5rem;
+}
 .yamTable thead th, .yamTable .total th {
-	font-size: 1.2rem;
-	background: black;
+	font-size: 2rem;
+	background: darkgray;
 	color: #fff;
 }
-.yamTable thead th:first-child, .yamTable .total th {
-	font-size: 1.5rem;
+.yamTable thead th:first-child {
+	font-size: 2.5rem;
+}
+.yamTable .total th {
+	font-size: 2rem;
 }
 .yamTable .total td {
 }
 .yamTable tfoot .total > * {
-	background: darkgray;
-	font-size: 2rem;
+	background: black;
+	font-size: 3rem;
 }
 .yamTable td {
 	text-align: center;
