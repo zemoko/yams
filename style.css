@@ -183,6 +183,9 @@ footer a:hover, footer a:focus {
 	}
 }
 
+@page {
+	size: A4 landscape;
+}
 @media print {
 	body {
 		background: white;
