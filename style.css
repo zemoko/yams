@@ -169,8 +169,14 @@ footer a:hover, footer a:focus {
 	.yamTable th {
 		font-size: 1.2rem;
 	}
+	.yamTable .total th, .yamTable .total.prime th, .yamTable .total.total1again th  {
+		font-size: 2.2rem;
+	}
 	.yamTable thead th, .yamTable thead th:first-child {
 		font-size: 1.6rem;
+	}
+	.yamTable tfoot .total th {
+		font-size: 3.5rem;
 	}
 	.yamTable input  {
 		width: 3rem;
