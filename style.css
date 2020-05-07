@@ -193,9 +193,40 @@ footer a:hover, footer a:focus {
 		background: none;
 	}
 	main {
+		width: 277mm;
 	}
 	.yamTable {
+		margin: 0;
 	}
+.yamTable thead th:first-child {
+    font-size: 10pt;
+	padding: 2pt;
+}
+.yamTable thead th:nth-child(2) {
+    font-size: 10pt;
+	padding: 2pt;
+}
+yamTable thead th, .yamTable .total th {
+    font-size: 10pt;
+	padding: 2pt;
+}
+tbody tr:not(.total) th {
+    font-size: 12pt;
+	padding: 2pt;
+}
+.yamTable .total th {
+    font-size: 12pt;
+	padding: 2pt;
+}
+yamTable .total.prime th, .yamTable .total.total1again th {
+	font-size: 10pt;
+	padding: 2pt;
+}
+.yamTable tfoot .total th {
+    font-size: 12pt;
+	padding: 2pt;
+}
+	
 	caption.impr {
 		display: table-caption;
 	}
