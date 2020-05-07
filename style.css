@@ -191,6 +191,8 @@ footer a:hover, footer a:focus {
 		background: white;
 		margin: 0;
 		background: none;
+		line-height: 1;
+		font-size:12pt;
 	}
 	main {
 		width: 277mm;
@@ -226,7 +228,9 @@ tbody tr:not(.total) th {
     font-size: 12pt;
 	padding: 2pt;
 }
-	
+.yamTable th, .yamTable td {
+    padding: 2pt;
+}	
 	caption.impr {
 		display: table-caption;
 	}
