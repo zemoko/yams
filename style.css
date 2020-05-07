@@ -36,6 +36,7 @@ h1 {
 .yamTable thead th, .yamTable .total th {
 	font-size: 1.2rem;
 	background: black;
+	color: #fff;
 }
 .yamTable thead th:first-child, .yamTable .total th {
 	font-size: 1.5rem;
@@ -53,11 +54,12 @@ h1 {
 	width: 4rem;
 	text-align: center;
 	border:none;
+	background: transparent;
 }
-tbody tr:nth-child(1+2n) {
+tbody tr:nth-child(2n) {
     background-color: #f5f5f5;
 }
-tbody tr td:nth-child(2n) {
+tbody tr td:nth-child(1+2n) {
     background-color: #f5f5f5;
 }
 
