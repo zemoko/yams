@@ -72,6 +72,9 @@ h1 {
 	color: white;
 	font-size: 3rem;
 }
+.yamTable tfoot output {
+	font-size: 3rem;
+}
 .yamTable td {
 	text-align: center;
 }
