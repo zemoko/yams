@@ -53,6 +53,7 @@ h1 {
 .yamTable input  {
 	width: 4rem;
 	text-align: center;
+	border:none;
 }
 .yamTable th, .yamTable td {
 	border: 1px solid darkgray;
@@ -80,7 +81,7 @@ footer {
 }
 footer p {
 	margin: 0 auto;
-	color: #e2e2e2;
+	color: #ccc;
 	font-size: 0.7em;
 	padding: 2em 0;
 	text-align: center;
