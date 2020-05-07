@@ -60,7 +60,7 @@ h1 {
 .yamTable .total td {
 }
 .yamTable tfoot .total > * {
-	background: white;
+	background: #d0aae7;
 }
 .yamTable tfoot .total th {
 	background: #9c4fc5;
