@@ -58,3 +58,7 @@ for (const elt of inputs) {
  		calculs( event.target.id.substring(4,11) );
 	});
 }
+
+document.querySelector("#btnImpr").addEventListener('click', (event) => {
+	window.print();
+});
