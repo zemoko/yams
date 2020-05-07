@@ -54,7 +54,7 @@ for (let c = 1; c <= 4; c++) {
 }
 var inputs = document.querySelectorAll("input")
 for (const elt of inputs) {
-	elt.addEventListener('blur', (event) => {
+	elt.addEventListener('change', (event) => {
  		calculs( event.target.id.substring(4,11) );
 	});
 }
