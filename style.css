@@ -90,6 +90,8 @@ h1 {
 }
 .yamTable input  {
 	width: 4rem;
+	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
+	font-size: 1.7rem;
 	text-align: center;
 	border:none;
 	background: transparent;
