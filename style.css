@@ -5,6 +5,13 @@
 	src: local('DollieScript'),
 		url(fonts/DollieScript.ttf) format('truetype');
 }
+@font-face {
+	font-family: 'kuriland';
+	font-style: normal;
+	font-weight: 400;
+	src: local('kuriland'),
+		url(fonts/kuriland.ttf) format('truetype');
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -40,6 +47,9 @@ h1 {
 	padding: 0.5em 0.3em 0.2em 0.3em;
 	text-align: center;
 	color: #f1f1f1;
+}
+.digit {
+	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
 }
 .yamTable {
 	margin: 0 auto;
@@ -96,6 +106,7 @@ h1 {
 }
 .yamTable tfoot output {
 	font-size: 3rem;
+	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
 }
 .yamTable td {
 	text-align: center;
