@@ -29,6 +29,7 @@ h1 {
 	border-collapse: collapse;
 	background: white;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+	position: relative
 }
 .yamTable th {
 	font-weight: normal;
@@ -38,6 +39,10 @@ h1 {
 }
 .yamTable caption {
 	font-size: 2.8rem;
+}
+.yamTable thead th {
+	position: sticky;
+	top: 0;
 }
 .yamTable thead th, .yamTable .total th {
 	font-size: 2rem;
