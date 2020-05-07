@@ -43,15 +43,12 @@ h1 {
 	font-size: 2rem;
 	color: #fff;
 }
-.yamTable thead th {
-	background: black;
-}
-.yamTable .total th {
-	background: darkgray;
-	color: black;
+.yamTable thead th, .yamTable .total th {
+	background: #5560fd;
+	color: white;
 }
 .yamTable .total.prime th, .yamTable .total.total1again th {
-	background: #bdbcbe;
+	background: #7b95fd;
 	font-size: 1.5rem;
 }
 .yamTable thead th:first-child {
@@ -66,7 +63,7 @@ h1 {
 	background: white;
 }
 .yamTable tfoot .total th {
-	background: black;
+	background: #9c4fc5;
 	color: white;
 	font-size: 3rem;
 }
