@@ -64,6 +64,7 @@ h1 {
 }
 .yamTable tfoot .total > * {
 	background: black;
+	color: white;
 	font-size: 3rem;
 }
 .yamTable td {
