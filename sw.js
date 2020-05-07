@@ -5,10 +5,10 @@ var contentToCache = [
   '/index.html',
   '/app.js',
   '/style.css',
-  '/pwa-examples/js13kpwa/favicon.ico',
-  '/pwa-examples/js13kpwa/icons/icon-32.png',
-  '/pwa-examples/js13kpwa/icons/icon-192.png',
-  '/pwa-examples/js13kpwa/icons/icon-512.png'
+  '/favicon.ico',
+  '/icons/icon-32.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png'
 ];
 
 // Installing Service Worker
