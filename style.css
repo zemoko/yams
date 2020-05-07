@@ -242,8 +242,11 @@ tbody tr:not(.total) th {
 	.yamTable > div {
 		flex: 1;
 	}
+	.yamTable > div:first-child {
+		padding-right: 4px;
+	}
 	.yamTable > div:last-child {
-		padding-left: 10px;
+		padding-left: 4px;
 	}
 	.yamTable table {
 		width: 100%;
