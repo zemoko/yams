@@ -190,11 +190,6 @@ footer a:hover, footer a:focus {
 		background: none;
 	}
 	main {
-		width: 276mm;
-		height: 190mm;
-		padding: 10mm;
-		transform: rotate(270deg) translate(-120%,0);
-		transform-origin: 0 0;
 	}
 	.yamTable {
 	}
