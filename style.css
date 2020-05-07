@@ -193,6 +193,25 @@ footer a:hover, footer a:focus {
 	}
 	.yamTable {
 	}
+	.yamTable caption {
+		font-size: 8rem;
+		line-height: 1.2;
+	}
+	.yamTable thead th, .yamTable .total th {
+		font-size: 3rem;
+	}
+	.yamTable thead th:first-child {
+		font-size: 4rem;
+	}
+	tbody tr:not(.total) th {
+		font-size: 4rem;
+	}
+	.yamTable .total th {
+		font-size: 4rem;
+	}
+	yamTable tfoot .total th {
+		font-size: 6rem;
+	}
 	caption.impr {
 		display: table-caption;
 	}
