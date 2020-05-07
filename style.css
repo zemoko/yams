@@ -21,7 +21,7 @@ html {
 }
 body {
 	background: linear-gradient(45deg,#4158d0,#c850c0);
-	font: normal 2em "DollieScript", Helvetica, Arial, Sans-Serif;
+	font: normal 3em "DollieScript", Helvetica, Arial, Sans-Serif;
 	line-height: 1.6;
 	color: #333;
 	display: flex;
@@ -86,13 +86,13 @@ h1 {
 }
 .yamTable .total.prime th, .yamTable .total.total1again th {
 	background: #7b95fd;
-	font-size: 1.5rem;
-}
-.yamTable thead th:first-child {
 	font-size: 2.5rem;
 }
+.yamTable thead th:first-child {
+	font-size: 3rem;
+}
 .yamTable .total th {
-	font-size: 2rem;
+	font-size: 3rem;
 }
 .yamTable .total td {
 }
@@ -102,11 +102,10 @@ h1 {
 .yamTable tfoot .total th {
 	background: #9c4fc5;
 	color: white;
-	font-size: 3rem;
+	font-size: 4rem;
 }
 .yamTable tfoot output {
 	font-size: 3rem;
-	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
 }
 .yamTable td {
 	text-align: center;
@@ -114,13 +113,19 @@ h1 {
 .yamTable input  {
 	width: 4rem;
 	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
-	font-size: 1.7rem;
+	font-size: 2rem;
 	text-align: center;
 	border:none;
 	background: transparent;
 }
+.yamTable tfoot output {
+	font-family: "Kuriland", Helvetica, Arial, Sans-Serif;
+}
 tbody tr:nth-child(2n) {
     background-color: #f5f5f5;
+}
+tbody tr:not(.total) th {
+    font-size: 2rem;
 }
 tbody tr:not(.total) td:nth-child(2n + 1) {
     background-color: #f5f5f5;
