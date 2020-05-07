@@ -1,0 +1,26 @@
+{
+    "name": "Yams",
+    "short_name": "yams",
+    "description": "Une application pour jouer au Yams 4 colonnes... ou juste pour imprimer ses feuilles de score ",
+    "icons": [
+        {
+            "src": "icons/icon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#9c4fc5",
+    "background_color": "#9c4fc5"
+}
