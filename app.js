@@ -3,35 +3,42 @@ if('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/sw.js');
 };
 
-function calculs(col) {
+function calculs( debut, col ) {
 	var total = 0;
-	var haut = document.querySelectorAll("[id^='inpt"+col+"']");
-	for (const score of haut) {
- 		if(score.value.length != 0) total = total + parseInt(score.value);
+	//var haut = document.querySelectorAll("[id^='inpt"+col+"']");
+	//for (const score of haut) {
+	for (let l = debut+1; l <= debut+6; l++) {
+ 		//if(score.value.length != 0) total = total + parseInt(score.value);
+		if(document.querySelector("#inptCol"+col+"Lig"+l).value.length != 0) total = total + parseInt( document.querySelector("#inptCol"+col+"Lig"+l).value );
 	}
 	if ( total > 0 ) {
-		if ( col.substr(4) == "Pts" ) {
+		//if ( col.substr(4) == "Pts" ) {
+		if ( debut == 0 ) {
 			// En haut
-			document.querySelector("#oupt"+col).value = total;
+			document.querySelector("#ouptCol"+col+"TotalH").value = total;
 			if ( total >= 63 ) {
-				document.querySelector("#oupt"+col+"Prime").value = 35;
+				document.querySelector("#ouptCol"+col+"Prime").value = 35;
 				total += 35;
 			}
-			document.querySelector("#oupt"+col+"Total").value = total;
-			document.querySelector("#oupt"+col+"TotalRep").value = total;
-			total2 = parseInt(document.querySelector("#oupt"+col.replace("Pts","Lig")+"Total").value);
+			document.querySelector("#ouptCol"+col+"Total1").value = total;
+			document.querySelector("#ouptCol"+col+"Total1again").value = total;
+			total2 = parseInt(document.querySelector("#ouptCol"+col+"Total2").value);
 			if (!isNaN(total2)) {
-				document.querySelector("#oupt"+col.replace("Pts","Total")).value = total + total2;
-				grandTotal()
+				document.querySelector("#ouptCol"+col+"Total").value = total + total2;
+			} else {
+				document.querySelector("#ouptCol"+col+"Total").value = total;
 			}
+			grandTotal();
 		} else {
 			// En bas
-			document.querySelector("#oupt"+col+"Total").value = total;			
-			total2 = parseInt(document.querySelector("#oupt"+col.replace("Lig","Pts")+"Total").value);
+			document.querySelector("#ouptCol"+col+"Total2").value = total;			
+			total2 = parseInt(document.querySelector("#ouptCol"+col+"Total1").value);
 			if (!isNaN(total2)) {
-				document.querySelector("#oupt"+col.replace("Lig","Total")).value = total + total2;
-				grandTotal()
+				document.querySelector("#ouptCol"+col+"Total").value = total + total2;
+			} else {
+				document.querySelector("#ouptCol"+col+"Total").value = total;
 			}
+			grandTotal();
 		}
 	}
 };
@@ -49,13 +56,23 @@ function grandTotal() {
 
 // Init
 for (let c = 1; c <= 4; c++) {
-	calculs("Col"+c+"Pts");
-	calculs("Col"+c+"Lig");
+	calculs(0,c);
+	calculs(6,c);
 }
 var inputs = document.querySelectorAll("input")
 for (const elt of inputs) {
 	elt.addEventListener('change', (event) => {
- 		calculs( event.target.id.substring(4,11) );
+		lig = parseInt(event.target.id.substring(11));
+		col = event.target.id.substring(7,8);
+		calculs( (lig<7)?0:6 , col );
+ 		switch (col) {
+ 			case "1":
+ 				if (lig<12) document.querySelector("#inptCol"+col+"Lig"+(lig+1)).disabled = false;
+ 				break;
+  			case "2":
+ 				if (lig>1) document.querySelector("#inptCol"+col+"Lig"+(lig-1)).disabled = false;
+ 				break;
+		}
 	});
 }
 
