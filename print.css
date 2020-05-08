@@ -11,10 +11,8 @@ body {
 	font-size:12pt;
 }
 main {
-	width: 240mm;
+	width: 260mm;
 	height: 190mm;
-	transform: rotate(270deg) translate(-240mm);
-	transform-origin: 0 0;
 }
 .yamTable {
 	margin: 0;
@@ -103,3 +101,22 @@ header, footer, input, output, button {
 .yamTable tfoot td {
 	border-left: 2px solid #9c4fc5;
 }
+
+/* Firefox */
+@supports (-moz-appearance:none) {
+	main {
+		width: 260mm;
+		transform: rotate(270deg) translate(-260mm);
+		transform-origin: 0 0;
+	}
+}
+
+/* Safari */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+	main {
+		width: 240mm;
+		transform: rotate(270deg) translate(-240mm);
+		transform-origin: 0 0;
+	}
+}}
