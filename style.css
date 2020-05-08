@@ -129,13 +129,16 @@ tbody tr:not(.total) th {
 tbody tr:not(.total) td:nth-child(2n + 1) {
     background-color: #f5f5f5;
 }
-tbody tr:not(.total):nth-child(2n) td:nth-child(2n + 1) {
+tbody tr:not(.total):nth-child(even) td:nth-child(2n + 1) {
     background-color: #e5e5e5;
 }
-tbody tr.total td:nth-child(2n) {
-    background-color: #f5f5f5;
+tbody tr.total td:nth-child(even) {
+    background-color: #cac9cb;
+}$
+tbody tr.total td:nth-child(odd) {
+    background-color: #e5e5e5;
 }
-tbody tr.total:nth-child(2n) td:nth-child(2n) {
+tbody tr.total:nth-child(even) td:nth-child(2n) {
     background-color: #e5e5e5;
 }
 
