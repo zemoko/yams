@@ -1,5 +1,5 @@
 // Files to cache
-var cacheName = 'yams-v1';
+var cacheName = 'yams-v1.1';
 var contentToCache = [
   '/',
   '/index.html',
