@@ -114,9 +114,9 @@ header, footer, input, output, button {
 /* Safari */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-	main {
+/*	main {
 		width: 240mm;
 		transform: rotate(270deg) translate(-240mm);
 		transform-origin: 0 0;
-	}
+	} */
 }}
