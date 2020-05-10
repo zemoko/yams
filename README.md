@@ -1,6 +1,6 @@
 # yams!
 
-Une application pour jouer au Yams, ok, mais au Yams! 4 colonnes (ou juste pour imprimer ses feuilles de score)
+Une application pour jouer au Yams, ok, mais au Yams! 4 colonnes (ou juste pour imprimer ses feuilles de score) :
 https://yams.6x8.org/
 
 ---
