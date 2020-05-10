@@ -1,7 +1,7 @@
 {
-    "name": "Yams",
-    "short_name": "Yams",
-    "description": "Une application pour jouer au Yams 4 colonnes... ou juste pour imprimer ses feuilles de score ",
+    "name": "Yams!",
+    "short_name": "Yams!",
+    "description": "Une application pour jouer au Yams, ok, mais au Yams! 4 colonnes (ou juste pour imprimer ses feuilles de score)",
   "icons": [
     {
       "src": "images/icons/icon-192x192.png",
