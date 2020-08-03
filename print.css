@@ -102,6 +102,28 @@ header, footer, input, output, button {
 	border-left: 2px solid #9c4fc5;
 }
 
+tbody tr:not(.total) td:nth-child(2n+1) {
+    background-color: #000;
+}
+tbody tr:not(.total):nth-child(2n) td:nth-child(2n+1) {
+    background-color: #000;
+}
+tbody tr.total td:nth-child(2n) {
+    background-color: #000;
+}
+tbody tr.total:nth-child(2n) td:nth-child(2n) {
+    background-color: #000;
+}
+.yamTable td {
+	border: 1px solid #cac9cb;
+}
+.total {
+    border: 2px solid #333;
+}
+.total.prime {
+    border: none;
+
+
 /* Firefox */
 @supports (-moz-appearance:none) {
 	main {
