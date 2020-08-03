@@ -111,12 +111,12 @@ tbody tr:not(.total) td:nth-child(2n+1), tbody tr:not(.total):nth-child(2n) td:n
 .total {
     border-style: solid;
 	border-color: #333;
+	border-width: 0;
 }
 .total.totalup {
     border-top: 2px;
 }
 .total.totalmiddle {
-    border: 0px;
 }
 .total.totaldown {
     border-bottom: 2px;
