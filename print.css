@@ -110,7 +110,7 @@ tbody tr:not(.total) td:nth-child(2n+1), tbody tr:not(.total):nth-child(2n) td:n
 }
 .total {
     border-style: solid;
-	border-color: #333;
+	border-color: #5560fd;
 	border-width: 0;
 }
 .total.totalup {
