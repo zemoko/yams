@@ -122,7 +122,7 @@ tbody tr.total:nth-child(2n) td:nth-child(2n) {
 }
 .total.prime {
     border: none;
-
+}
 
 /* Firefox */
 @supports (-moz-appearance:none) {
