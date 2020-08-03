@@ -110,6 +110,7 @@ tbody tr:not(.total) td:nth-child(2n+1), tbody tr:not(.total):nth-child(2n) td:n
 }
 .total {
     border: 2px solid #333;
+	border-collapse: collapse;
 }
 .total.prime {
     border: 1px solid #cac9cb;
